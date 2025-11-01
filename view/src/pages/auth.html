@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Recipe Management</title>
+</head>
+
+<body>
+    <section id="login" class="">
+        <form action="" id="login-form">
+            <div id="login-form-header">
+                <h2 id="login-heading">Recipe Management</h2>
+                <h2 id="redirect-signup">
+                    New User?
+                    <a href="">Create a account!</a>
+                </h2>
+            </div>
+
+            <div class="login-email">
+                <label for="email">Enter Your Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email id">
+            </div>
+            <div class="login-password">
+                <label for="password">Enter your Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+    </section>
+    <section id="signup" class="hidden">
+        <form action="" id="signup-form">
+            <div id="signup-form-header">
+                <h2 id="signup-heading">Recipe Management</h2>
+                <h2 id="redirect-login">
+                    Already have an account?
+                    <a href="">Login!</a>
+                </h2>
+            </div>
+
+            <div class="user-name">
+                <label for="userName">Your Name:</label>
+                <input type="text" name="userName" id="userName" placeholder="Enter your name">
+            </div>
+            <div class="user-mobile">
+                <label for="mobile">Your Mobile No.:</label>
+                <input type="number" name="mobile" id="mobile" placeholder="Enter your mobile">
+            </div>
+            <div class="user-email">
+                <label for="userEmail">Email Address:</label>
+                <input type="text" name="email" id="userEmail" placeholder="example@abc.com">
+            </div>
+            <div class="user-password">
+                <label for="create-password">Create New Password:</label>
+                <input type="password" name="password" id="create-password" placeholder="Enter your password">
+            </div>
+            <button type="submit" id="signup-btn">Signup</button>
+        </form>
+    </section>
+
+    <div id="toast" class="toast hidden"></div>
+</body>
+
+<script src="/scripts/auth.js"></script>
+<script src="/scripts/toast.js"></script>
+
+</html>
